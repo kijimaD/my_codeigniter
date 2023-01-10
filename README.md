@@ -1,1 +1,5 @@
-# CodeIgniter 4 Application Starter
+# CodeIgniter Playground
+
+```shell
+docker-compose up
+```
