@@ -7,13 +7,22 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "codeigniter4/framework": "^4.0",
-        "friendsofphp/php-cs-fixer": "^3.13"
+        "friendsofphp/php-cs-fixer": "^3.13",
+        "kijimad/myapp": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.1"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./lib/myapp",
+            "options": {
+                "symlink": true
+            }}
+    ],
     "suggest": {
         "ext-fileinfo": "Improves mime type detection for files"
     },
