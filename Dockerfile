@@ -1,7 +1,7 @@
 FROM php:8.0-apache
 
 RUN apt update \
-    && apt-get install -y git libicu-dev \
+    && apt-get install -y git unzip libicu-dev \
     && docker-php-ext-install intl
 
 RUN git config --global --add safe.directory '*'
