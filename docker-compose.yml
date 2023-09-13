@@ -1,8 +1,10 @@
-version: '3'
+version: '3.7'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      target: php
     volumes:
       - .:/var/www/html
       - php_vendor:/var/www/html/vendor
@@ -11,7 +13,7 @@ services:
     environment:
       CI_ENVIRONMENT: development
       DATABASE_HOST: db
-    command: php spark serve --host 0.0.0.0
+    command: bash -c "composer install && php spark serve --host 0.0.0.0"
 
   db:
     image: postgres
