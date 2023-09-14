@@ -1,0 +1,23 @@
+{
+    "name": "kijimad/myapp",
+    "description": "my package example",
+    "keywords": [],
+    "homepage": "",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Kijima Daigo",
+            "homepage": ""
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": { "Myapp\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    }
+}

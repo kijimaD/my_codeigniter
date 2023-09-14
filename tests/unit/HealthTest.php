@@ -47,4 +47,11 @@ final class HealthTest extends CIUnitTestCase
             'baseURL "' . $reader->baseURL . '" in app/Config/App.php is not valid URL'
         );
     }
+
+    // 自作ライブラリをローカルから読み込めている
+    public function testLibLoad()
+    {
+        $myapp = new \Myapp\Myapp();
+        $this->assertEquals(1, $myapp->mynumber);
+    }
 }

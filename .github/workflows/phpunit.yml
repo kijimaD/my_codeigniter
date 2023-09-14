@@ -45,8 +45,3 @@ jobs:
 
       - name: Test with phpunit
         run: vendor/bin/phpunit --coverage-text
-
-      - name: test
-        run: |
-          docker-compose up -d web
-          docker-compose exec -T web composer test --coverage-text ./tests

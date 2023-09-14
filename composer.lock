@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dccd852bd73f0fec104ba24b10d9807d",
+    "content-hash": "27bfdbcabf98228bbb2fc92afb0f76dd",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -583,6 +583,41 @@
                 }
             ],
             "time": "2023-01-02T23:53:50+00:00"
+        },
+        {
+            "name": "kijimad/myapp",
+            "version": "dev-lib",
+            "dist": {
+                "type": "path",
+                "url": "./lib/myapp",
+                "reference": "6cf0da145707df4dabbf974ede386edf3907a9d4"
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Myapp\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": []
+            },
+            "license": [
+                "unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Kijima Daigo",
+                    "homepage": ""
+                }
+            ],
+            "description": "my package example",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "laminas/laminas-escaper",
@@ -3999,12 +4034,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kijimad/myapp": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 || ^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
